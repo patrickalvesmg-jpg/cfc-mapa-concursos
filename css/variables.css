@@ -1,56 +1,63 @@
 /* ============================================================
-   CFC · Mapa de Concursos — Design System "Editorial Esmeralda"
+   CFC · Mapa de Concursos — Design System (identidade CFC Academy)
+   Tema DARK: lima vibrante sobre preto/carvão. Archivo + Sora.
    Ponto único de calibração de identidade.
    ============================================================ */
 :root{
-  /* superfícies (off-white quente) */
-  --paper:#FAF9F6;
-  --paper-2:#F3F1EA;
-  --card:#FFFFFF;
+  /* superfícies (escuras) */
+  --paper:#0a0f0a;          /* fundo geral (preto esverdeado) */
+  --paper-2:#0f1710;        /* elevação sutil */
+  --card:#141c14;           /* cards / painéis */
+  --card-2:#18211a;         /* card hover / aninhado */
 
-  /* tinta */
-  --ink:#191C1A;
-  --ink-2:#5C625E;
-  --ink-3:#8A8F8A;
+  /* tinta (texto sobre escuro) */
+  --ink:#F3F7F0;            /* texto principal claro */
+  --ink-2:#9aa79a;          /* secundário */
+  --ink-3:#5f6b5f;          /* terciário / labels */
 
-  /* acento — verde-esmeralda (aprovação / dinheiro) */
-  --esmeralda:#0E6B4F;
-  --esmeralda-d:#0A5540;
-  --esmeralda-wash:#EAF2EE;
+  /* acento — verde-LIMA da CFC */
+  --lima:#9FE31A;
+  --lima-esc:#76A41C;
+  --lima-glow:rgba(159,227,26,.30);
 
-  /* dourado — usado com parcimônia (selecionado / destaque nobre) */
-  --gold:#B9892E;
-  --gold-wash:#F6EFDD;
+  /* aliases semânticos do acento (usados pelos componentes) */
+  --esmeralda:#9FE31A;      /* acento cheio (botões/mapa) */
+  --esmeralda-d:#B6EF4A;    /* variação clara p/ HOVER sobre escuro */
+  --esmeralda-wash:rgba(159,227,26,.12); /* fundo suave do acento */
+
+  /* dourado -> aqui vira o próprio lima escuro p/ "selecionado/nobre" */
+  --gold:#C9A227;
+  --gold-wash:rgba(201,162,39,.16);
 
   /* linhas */
-  --line:#E4E0D6;
-  --line-strong:#D6D1C4;
+  --line:rgba(159,227,26,.14);   /* divisórias com leve tom lima */
+  --line-strong:rgba(243,247,240,.16);
 
-  /* semânticos (discretos) */
-  --ok:#0E6B4F;
-  --warn:#B9892E;
-  --crit:#B4442E;
+  /* semânticos */
+  --ok:#9FE31A;
+  --warn:#E3B341;
+  --crit:#ef6a6a;
 
   /* raios e sombra */
   --r-sm:10px;
   --r:14px;
   --r-lg:18px;
   --r-pill:999px;
-  --sombra:0 1px 2px rgba(25,28,26,.05);
-  --shadow-lift:0 6px 24px -10px rgba(25,28,26,.18);
+  --sombra:0 1px 2px rgba(0,0,0,.4);
+  --shadow-lift:0 12px 40px -12px rgba(0,0,0,.7);
   --raio:14px;
 
-  /* tipografia — Montserrat p/ títulos (display), Inter p/ corpo, mono p/ dados */
-  --serif:"Montserrat",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  /* tipografia — Archivo (display) + Sora (corpo), da CFC */
+  --serif:"Archivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:"Sora",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --mono:"SFMono-Regular",ui-monospace,"Cascadia Mono",Consolas,"Liberation Mono",Menlo,monospace;
   --fonte:var(--sans);
 
   /* ---- aliases de compatibilidade (nomes antigos → nova paleta) ---- */
-  --cor-primaria:var(--esmeralda);
-  --cor-primaria-clara:var(--esmeralda-d);
-  --cor-destaque:var(--gold);
-  --cor-whatsapp:#0E6B4F;
+  --cor-primaria:var(--lima);
+  --cor-primaria-clara:var(--lima-esc);
+  --cor-destaque:var(--lima);
+  --cor-whatsapp:#25D366;
   --cor-fundo:var(--paper);
   --cor-card:var(--card);
   --cor-texto:var(--ink);
